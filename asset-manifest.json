@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/battle-of-hong-kong/static/css/main.073c9b0a.css",
-    "main.js": "/battle-of-hong-kong/static/js/main.411c23d1.js",
-    "static/js/787.ab98d7b9.chunk.js": "/battle-of-hong-kong/static/js/787.ab98d7b9.chunk.js",
-    "static/media/logo.svg": "/battle-of-hong-kong/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/battle-of-hong-kong/index.html",
-    "main.073c9b0a.css.map": "/battle-of-hong-kong/static/css/main.073c9b0a.css.map",
-    "main.411c23d1.js.map": "/battle-of-hong-kong/static/js/main.411c23d1.js.map",
-    "787.ab98d7b9.chunk.js.map": "/battle-of-hong-kong/static/js/787.ab98d7b9.chunk.js.map"
+    "main.css": "/Battle-of-Hong-Kong/static/css/main.073c9b0a.css",
+    "main.js": "/Battle-of-Hong-Kong/static/js/main.7d5ff476.js",
+    "static/js/787.ab98d7b9.chunk.js": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js",
+    "static/media/logo.svg": "/Battle-of-Hong-Kong/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Battle-of-Hong-Kong/index.html",
+    "main.073c9b0a.css.map": "/Battle-of-Hong-Kong/static/css/main.073c9b0a.css.map",
+    "main.7d5ff476.js.map": "/Battle-of-Hong-Kong/static/js/main.7d5ff476.js.map",
+    "787.ab98d7b9.chunk.js.map": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.411c23d1.js"
+    "static/js/main.7d5ff476.js"
   ]
 }
