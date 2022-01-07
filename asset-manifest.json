@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/Battle-of-Hong-Kong/static/css/main.7057c1d9.css",
-    "main.js": "/Battle-of-Hong-Kong/static/js/main.1c6c2231.js",
+    "main.css": "/Battle-of-Hong-Kong/static/css/main.7ba827d2.css",
+    "main.js": "/Battle-of-Hong-Kong/static/js/main.2de619f0.js",
     "static/js/787.ab98d7b9.chunk.js": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js",
+    "static/media/HongKongIslandMap.png": "/Battle-of-Hong-Kong/static/media/HongKongIslandMap.dde4c8699e7390123df4.png",
+    "static/media/1980_lest_we_forget.png": "/Battle-of-Hong-Kong/static/media/1980_lest_we_forget.6a26ab9805a08fdf3221.png",
     "static/media/Hughesiliers.jpg": "/Battle-of-Hong-Kong/static/media/Hughesiliers.9a95765cd415791a8a5e.jpg",
     "static/media/banner.jpg": "/Battle-of-Hong-Kong/static/media/banner.83aef17bc4169fb0f6b7.jpg",
+    "static/media/ststephens.jpeg": "/Battle-of-Hong-Kong/static/media/ststephens.8db8c2cfdee663164368.jpeg",
     "static/media/british_solider.svg": "/Battle-of-Hong-Kong/static/media/british_solider.783723b74eda1d94bad7d1cec2b7bec3.svg",
     "index.html": "/Battle-of-Hong-Kong/index.html",
     "static/media/Flag_of_the_United_Kingdom.svg": "/Battle-of-Hong-Kong/static/media/Flag_of_the_United_Kingdom.fd46970f89e3fbca473f57e811916ea0.svg",
     "static/media/Flag_of_Japan_(1870–1999).svg": "/Battle-of-Hong-Kong/static/media/Flag_of_Japan_(1870–1999).94601c1af273882a0c964a18a27976a9.svg",
-    "main.7057c1d9.css.map": "/Battle-of-Hong-Kong/static/css/main.7057c1d9.css.map",
-    "main.1c6c2231.js.map": "/Battle-of-Hong-Kong/static/js/main.1c6c2231.js.map",
+    "main.7ba827d2.css.map": "/Battle-of-Hong-Kong/static/css/main.7ba827d2.css.map",
+    "main.2de619f0.js.map": "/Battle-of-Hong-Kong/static/js/main.2de619f0.js.map",
     "787.ab98d7b9.chunk.js.map": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7057c1d9.css",
-    "static/js/main.1c6c2231.js"
+    "static/css/main.7ba827d2.css",
+    "static/js/main.2de619f0.js"
   ]
 }
