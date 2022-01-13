@@ -52,8 +52,12 @@ body {
 
 .size {
 
-  max-width: 25px; 
+  max-width: 1.5vw;
+}
 
+.size-plane {
+
+  width: 4vw; 
 }
 
 .legend {
@@ -110,21 +114,23 @@ h1 {
 
 .item-map-left {
   position: sticky;
-  top:25vh;
-  flex: 1;
+  top:10vh;
+  flex: 2;
   
 }
 
 .item-map-right {
   flex: 1;
   overflow: auto;
+  margin-bottom: 80vh;
+  margin-top: 80vh;
 
 }
 
 .container-map > div {
   // flex: 40%; /* or - flex: 0 50% - or - flex-basis: 50% - */
   /*demo*/
-  margin: 5%;
+
   box-shadow: 0 0 0 0px black;
 }
 

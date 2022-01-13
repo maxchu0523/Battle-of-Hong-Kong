@@ -7,39 +7,110 @@ import BirtishFlag from '../resources/img/Flag_of_the_United_Kingdom.svg'
 import BirtishSolider from '../resources/img/british_solider.svg'
 import Hughesiliers from '../resources/img/Hughesiliers.jpg'
 import StStephens from '../resources/img/ststephens.jpeg'
+import ReactDOM from 'react-dom'
 // import JapanSolider from '../resources/img/japan_solider.svg'
-// import plane from '../resources/img/plane.svg'
+import plane from '../resources/img/Black_aircraft_icon.svg'
+
+import map from '../resources/img/08.svg'
+import map1 from '../resources/img/08.svg'
+import map2 from '../resources/img/10.svg'
+import map3 from '../resources/img/13.svg'
+import map4 from '../resources/img/17.svg'
+import map5 from '../resources/img/18.svg'
+
+
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import HongKongIslandMap from '../resources/img/HongKongIslandMap.png';
-import lestWeForGet from '../resources/img/1980_lest_we_forget.png'
-
-
+import lestWeForGet from '../resources/img/1980_lest_we_forget.png';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 
 function Main() {
+    const [scrollPosition, SetScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset + (window.screen.height/2);
+        // console.log(position);
+        var bodyRect = document.body.getBoundingClientRect(),
+
+        elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map1");
+        }
+        
+        elemRect = document.getElementById('mapTimeLine2')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map2");
+        }
+        
+        elemRect = document.getElementById('mapTimeLine3')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map3");
+        }
+
+        elemRect = document.getElementById('mapTimeLine4')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map4");
+        }
+
+        elemRect = document.getElementById('mapTimeLine5')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map5");
+        }
+
+        elemRect = document.getElementById('mapTimeLine6')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map6");
+        }
+
+        elemRect = document.getElementById('mapTimeLine7')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map7");
+        }
+
+        elemRect = document.getElementById('mapTimeLine8')!.getBoundingClientRect();
+        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+            console.log("passed map8");
+        }
+
+
+        SetScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
+
 
             <div className="hero-image">
                 <div className="hero-text">
                     <h1>Battle Of Hong Kong</h1>
                 </div>
             </div>
+            intro
 
 
 
+            flag smaller focus on the size comparison
             <div className='container'>
+
                 <div className='item'>
-                    <img src={BirtishFlag} />
+                    <img src={BirtishFlag} style={{ border: "solid 0.5px" }} />
                 </div>
                 <div className='item'>
                     The Battle of Hong Kong (8–25 December 1941), also known as the Defence of Hong Kong and the Fall of Hong Kong, was one of the first battles of the Pacific War in World War II.
                 </div>
-                <div className='item'>
-                    <img src={JapanFlag} />
+                <div className='item'   >
+                    <img src={JapanFlag} style={{ border: "solid 0.5px" }} />
                 </div>
 
 
@@ -60,6 +131,12 @@ function Main() {
                     <img className="size" src={BirtishSolider} />
                     <img className="size" src={BirtishSolider} />
                     <img className="size" src={BirtishSolider} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+
 
                 </div>
                 <div className='item' >
@@ -96,6 +173,54 @@ function Main() {
                     <img className="size" src={BirtishSolider} />
                     <img className="size" src={BirtishSolider} />
                     <img className="size" src={BirtishSolider} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+
                 </div>
 
                 <div className='item' >
@@ -107,25 +232,36 @@ function Main() {
                 </div>
                 <div className='item' >
                     <div style={{ display: "flex", justifyContent: "end" }}><img className="legend" src={BirtishSolider} /> <div>~ 1000 soliders </div> </div>
+                    <div style={{ display: "flex", justifyContent: "end" }}><img className="legend" src={plane} /> <div>= 1 plane </div> </div>
                 </div>
             </div>
 
 
 
 
-            <div className="container-map" style={{ backgroundColor: "black" }}>
+            make time line background black
+            time line text white
+            focus more on the map it self
+            <div id="map-timeline" className="container-map" style={{ backgroundColor: "black" }}>
 
                 <div className="item-map-left" >
-                    
+                    change map according to time line
+                    better may be video tag animation
                     <div >
-                        <img src={HongKongIslandMap} ></img>
+                        <img id="map" src={map} ></img>
                     </div>
+
+
+
 
                 </div>
 
+
                 <div className="item-map-right" >
                     <VerticalTimeline
+
                         layout={'1-column'}
+                        
                     >
                         {/* <VerticalTimelineElement
                             className="vertical-timeline-element--work"
@@ -146,22 +282,32 @@ function Main() {
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
 
                         /> */}
-                        <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            date="8/12"
-                            iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
 
+
+
+
+
+                        <VerticalTimelineElement
+                            id='mapTimeLine1'
+                            className="vertical-timeline-element"
+                            iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
+       
+                            
                         >
-                            <h3 className="vertical-timeline-element-title">Out Break of the War</h3>
-                            <ul>
+
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Out Break of the War</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Airstrike KaiTak Aiport </li>
                                 <li> Battles in the Northern New Territories </li>
                                 <li> Airstrike KaiTak Aiport </li>
 
                             </ul>
+                            <p style={{ color: 'white' }}>8/12</p>
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
+                            id='mapTimeLine2'
                             className="vertical-timeline-element--work"
                             date="9/12 - 10/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -176,6 +322,7 @@ function Main() {
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
+                            id='mapTimeLine3'
                             className="vertical-timeline-element--work"
                             date="10/12 - 13/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -190,6 +337,7 @@ function Main() {
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
+                            id='mapTimeLine3'
                             className="vertical-timeline-element--education"
                             date="13/12 - 17/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -206,6 +354,7 @@ function Main() {
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
+                            id='mapTimeLine4'
                             className="vertical-timeline-element--education"
                             date="18/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -221,6 +370,7 @@ function Main() {
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
+                            id='mapTimeLine5'
                             className="vertical-timeline-element--education"
                             date="19/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -238,6 +388,7 @@ function Main() {
 
 
                         <VerticalTimelineElement
+                            id='mapTimeLine6'
                             className="vertical-timeline-element--education"
                             date="2002 - 2006"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -260,6 +411,7 @@ function Main() {
 
 
                         <VerticalTimelineElement
+                            id='mapTimeLine7'
                             className="vertical-timeline-element--education"
                             date="22/12 - 24/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -278,6 +430,7 @@ function Main() {
 
 
                         <VerticalTimelineElement
+                            id='mapTimeLine8'
                             className="vertical-timeline-element--education"
                             date="25/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
@@ -343,7 +496,10 @@ function Main() {
         </>
     );
 }
+const rootElement = document.getElementById('root')
+ReactDOM.render(<Main />, rootElement)
 
 export default Main;
+
 
 
