@@ -11,21 +11,19 @@ import ReactDOM from 'react-dom'
 // import JapanSolider from '../resources/img/japan_solider.svg'
 import plane from '../resources/img/Black_aircraft_icon.svg'
 
-import map from '../resources/img/08.svg'
-import map1 from '../resources/img/08.svg'
-import map2 from '../resources/img/10.svg'
-import map3 from '../resources/img/13.svg'
-import map4 from '../resources/img/17.svg'
-import map5 from '../resources/img/18.svg'
-
-
-
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import HongKongIslandMap from '../resources/img/HongKongIslandMap.png';
 import lestWeForGet from '../resources/img/1980_lest_we_forget.png';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import map1 from '../resources/img/map/08.svg'
+import map2 from '../resources/img/map/10.svg'
+import map3 from '../resources/img/map/13.svg'
+import map4 from '../resources/img/map/17.svg'
+import map5 from '../resources/img/map/18.svg'
+
+let mapName = map1;
 
 
 function Main() {
@@ -38,26 +36,32 @@ function Main() {
         elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             console.log("passed map1");
+            mapName = map1;
         }
         
         elemRect = document.getElementById('mapTimeLine2')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             console.log("passed map2");
+            // mapName = "10"
+            mapName = map2;
         }
         
         elemRect = document.getElementById('mapTimeLine3')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             console.log("passed map3");
+            mapName = map3;
         }
 
         elemRect = document.getElementById('mapTimeLine4')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             console.log("passed map4");
+            mapName = map4;
         }
 
         elemRect = document.getElementById('mapTimeLine5')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             console.log("passed map5");
+            mapName = map5;
         }
 
         elemRect = document.getElementById('mapTimeLine6')!.getBoundingClientRect();
@@ -248,7 +252,8 @@ function Main() {
                     change map according to time line
                     better may be video tag animation
                     <div >
-                        <img id="map" src={map} ></img>
+                        <img id="map" src={mapName} ></img>
+                        
                     </div>
 
 
