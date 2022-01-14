@@ -20,7 +20,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  border-style: solid;
+  // border-style: solid;
+  font-size: 50px
+
   ;
 }
 
@@ -114,7 +116,8 @@ h1 {
 
 .item-map-left {
   position: sticky;
-  top:10vh;
+  top: 0;
+
   flex: 2;
   
 }

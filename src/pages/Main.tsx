@@ -22,6 +22,10 @@ import map2 from '../resources/img/map/10.svg'
 import map3 from '../resources/img/map/13.svg'
 import map4 from '../resources/img/map/17.svg'
 import map5 from '../resources/img/map/18.svg'
+import map6 from '../resources/img/map/21.svg'
+import map7 from '../resources/img/map/24.svg'
+import map8 from '../resources/img/map/25.svg'
+
 
 let mapName = map1;
 
@@ -35,48 +39,42 @@ function Main() {
 
         elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map1");
             mapName = map1;
         }
         
         elemRect = document.getElementById('mapTimeLine2')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map2");
-            // mapName = "10"
             mapName = map2;
         }
         
         elemRect = document.getElementById('mapTimeLine3')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map3");
             mapName = map3;
         }
 
         elemRect = document.getElementById('mapTimeLine4')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map4");
             mapName = map4;
         }
 
         elemRect = document.getElementById('mapTimeLine5')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map5");
             mapName = map5;
         }
 
         elemRect = document.getElementById('mapTimeLine6')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map6");
+            mapName = map6;
         }
 
         elemRect = document.getElementById('mapTimeLine7')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map7");
+            mapName = map7;
         }
 
         elemRect = document.getElementById('mapTimeLine8')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            console.log("passed map8");
+            mapName = map8;
         }
 
 
@@ -97,54 +95,67 @@ function Main() {
 
             <div className="hero-image">
                 <div className="hero-text">
-                    <h1>Battle Of Hong Kong</h1>
+                    <h1>Battle Of</h1>
+                    <h1>Hong Kong</h1>
                 </div>
             </div>
-            intro
+
+            <div style={{ alignContent: "center" , paddingTop: "10vh", paddingLeft: "25vw" , paddingRight: "25vw"}}>
+                <p style={{ textAlign: "center" }}>
+                The Battle of Hong Kong (8–25 December 1941), also known as the Defence of Hong Kong and the Fall of Hong Kong, was one of the first battles of the Pacific War in World War II. 
+                On the same morning as the attack on Pearl Harbor, forces of the Empire of Japan attacked the British Crown colony of Hong Kong, without declaring war against the British Empire. 
+                The Hong Kong garrison consisted of British, Indian and Canadian units, also the Auxiliary Defence Units and Hong Kong Volunteer Defence Corps (HKVDC).
+                Within a week the defenders abandoned the mainland and less than two weeks later, with their position on the island untenable, the colony surrendered.
+                </p>
+            </div>
 
 
-
-            flag smaller focus on the size comparison
             <div className='container'>
 
                 <div className='item'>
-                    <img src={BirtishFlag} style={{ border: "solid 0.5px" }} />
+                    <div>
+                        <h1 style={{ textAlign: "left" }}>
+                            The
+                        </h1>
+                        <h1 style={{ textAlign: "left" }}>
+                            Military
+                        </h1>
+                        <h1 style={{ textAlign: "left" }}>
+                            Imbalance
+                        </h1>
+                    </div>
+                    
                 </div>
                 <div className='item'>
-                    The Battle of Hong Kong (8–25 December 1941), also known as the Defence of Hong Kong and the Fall of Hong Kong, was one of the first battles of the Pacific War in World War II.
+                    <img src={BirtishFlag} style={{ border: "solid 0.5px"}} />
                 </div>
                 <div className='item'   >
                     <img src={JapanFlag} style={{ border: "solid 0.5px" }} />
                 </div>
 
-
                 <div className='item'>
-
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-
-
                 </div>
                 <div className='item' >
-                    On the same morning as the attack on Pearl Harbor, forces of the Empire of Japan attacked the British Crown colony of Hong Kong, without declaring war against the British Empire. The Hong Kong garrison consisted of British, Indian and Canadian units, also the Auxiliary Defence Units and Hong Kong Volunteer Defence Corps (HKVDC).
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size" src={BirtishSolider} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
+                    <img className="size-plane" src={plane} />
                 </div>
                 <div className='item'>
                     <img className="size" src={BirtishSolider} />
@@ -242,15 +253,13 @@ function Main() {
 
 
 
-
-            make time line background black
-            time line text white
-            focus more on the map it self
             <div id="map-timeline" className="container-map" style={{ backgroundColor: "black" }}>
-
+                
                 <div className="item-map-left" >
-                    change map according to time line
-                    better may be video tag animation
+                    <div>
+                        <h1 style={{ color: "white", textAlign: "left", paddingLeft: "2vw" }}> Battle </h1>
+                    </div>
+                    
                     <div >
                         <img id="map" src={mapName} ></img>
                         
@@ -266,7 +275,8 @@ function Main() {
                     <VerticalTimeline
 
                         layout={'1-column'}
-                        
+                        animate={ true }
+                    
                     >
                         {/* <VerticalTimelineElement
                             className="vertical-timeline-element--work"
@@ -297,6 +307,7 @@ function Main() {
                             className="vertical-timeline-element"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
                             contentStyle={{ background: 'black' }}
+                            
        
                             
                         >
@@ -314,80 +325,85 @@ function Main() {
                         <VerticalTimelineElement
                             id='mapTimeLine2'
                             className="vertical-timeline-element--work"
-                            date="9/12 - 10/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Battle of Gin Drinker's Line</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Battle of Gin Drinker's Line</h3>
+                            <ul style={{ color: 'white' }}> 
                                 <li> Japan Attack on Gin Drinker's Line </li>
                                 <li> Fall of Shing Mun Redoubt </li>
                             </ul>
+                            <p style={{ color: 'white' }}>9/12 - 10/12</p>
 
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             id='mapTimeLine3'
                             className="vertical-timeline-element--work"
-                            date="10/12 - 13/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Japanese occupation of Kowloon Peninsula</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese occupation of Kowloon Peninsula</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Fall of Gin Drinker's Line </li>
                                 <li> British Army retreats to Hong Kong Island</li>
                                 <li> Fall of the Kowloon Peninsula</li>
                             </ul>
+                            <p style={{ color: 'white' }}>10/12 - 13/12</p>
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             id='mapTimeLine3'
                             className="vertical-timeline-element--education"
-                            date="13/12 - 17/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Japanese troops prepare to land on Hong Kong Island</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese troops prepare to land on Hong Kong Island</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Japan Attack on Gin Drinker's Line </li>
                                 <li> Japanese air raids and bombardment of Hong Kong Island </li>
                                 <li> Deployment of British Army to Hong Kong Island </li>
                                 <li> Japanese prepareing to land on Hong Kong Island </li>
                                 <li> Royal Navy Interference with Japanese Army </li>
                             </ul>
+                            <p style={{ color: 'white' }}>13/12 - 17/12</p>
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             id='mapTimeLine4'
                             className="vertical-timeline-element--education"
-                            date="18/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Japanese landing on Hong Kong Island</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese landing on Hong Kong Island</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> The British army's vision was obstructed by thick smoke </li>
                                 <li> Japanese army launched a landing battle </li>
                                 <li> British torpedo boats attacked the Japanese fleet </li>
                             </ul>
+                            <p style={{ color: 'white' }}>18/12</p>
 
 
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                             id='mapTimeLine5'
                             className="vertical-timeline-element--education"
-                            date="19/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Japanese Army penetrated into Hong Kong Island</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese Army penetrated into Hong Kong Island</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Japanese advance along Kim Tuk's Horse Path and Tai Tam Road </li>
                                 <li> Wong Nai Chung Gap Battle </li>
                                 <li> Western Brigade Headquarters fell </li>
                                 <li> Fall of Shing Mun Redoubt </li>
                             </ul>
+                            <p style={{ color: 'white' }}>19/12</p>
 
                         </VerticalTimelineElement>
 
@@ -395,12 +411,12 @@ function Main() {
                         <VerticalTimelineElement
                             id='mapTimeLine6'
                             className="vertical-timeline-element--education"
-                            date="2002 - 2006"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">British counter-offensive failed and fell into division</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>British counter-offensive failed and fell into division</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> The British Western Brigade counterattacks Wong Nai Chung Gap</li>
                                 <li> Fall of Jardine's Mount</li>
                                 <li> Western Brigade Headquarters fell </li>
@@ -410,6 +426,7 @@ function Main() {
                                 <li>London encouraged the defenders to keep fighting</li>
                                 <li>The British repelled the Japanese destroyers</li>
                             </ul>
+                            <p style={{ color: 'white' }}>20/12 - 21/12</p>
 
 
                         </VerticalTimelineElement>
@@ -418,18 +435,19 @@ function Main() {
                         <VerticalTimelineElement
                             id='mapTimeLine7'
                             className="vertical-timeline-element--education"
-                            date="22/12 - 24/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">Last British Resistance</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Last British Resistance</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Fall of Repulse Bay</li>
                                 <li> The Battle of Stanley North </li>
                                 <li> Western Brigade Headquarters fell </li>
                                 <li> The British Army's Western Brigade Defense Lines gradually disintegrated </li>
                                 <li>Stanley Battle and Japanese Massacre</li>
                             </ul>
+                            <p style={{ color: 'white' }}>22/12 - 24/12</p>
 
                         </VerticalTimelineElement>
 
@@ -437,16 +455,17 @@ function Main() {
                         <VerticalTimelineElement
                             id='mapTimeLine8'
                             className="vertical-timeline-element--education"
-                            date="25/12"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
+                            contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title">The Fall of Hong Kong</h3>
-                            <ul>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>The Fall of Hong Kong</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> The Battle of Christmas Day </li>
                                 <li> The Governor of Hong Kong decides to surrender </li>
                                 <li> The final battle of the British Eastern Brigade </li>
                             </ul>
+                            <p style={{ color: 'white' }}>25/12</p>
 
                         </VerticalTimelineElement>
 
@@ -479,8 +498,7 @@ function Main() {
 
             </div>
 
-
-            <div style={{ backgroundColor: "", height: "100vh", width: "100vh" }}>
+            <div style={{ backgroundColor: "", height: "100vh", width: "100vw" }}>
                 <div style={{ position: "relative", top: "30%", left: "30%" }} >
                     <h1 style={{ color: "white" }}>Lest we forget</h1>
 
@@ -493,7 +511,7 @@ function Main() {
 
             </div>
 
-            <p>By Max</p>
+
 
 
 
