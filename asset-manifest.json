@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Battle-of-Hong-Kong/static/css/main.83c8c012.css",
-    "main.js": "/Battle-of-Hong-Kong/static/js/main.d067afe1.js",
+    "main.css": "/Battle-of-Hong-Kong/static/css/main.5b391650.css",
+    "main.js": "/Battle-of-Hong-Kong/static/js/main.76cdb250.js",
     "static/js/787.ab98d7b9.chunk.js": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js",
     "static/media/1980_lest_we_forget.png": "/Battle-of-Hong-Kong/static/media/1980_lest_we_forget.6a26ab9805a08fdf3221.png",
     "static/media/Hughesiliers.jpg": "/Battle-of-Hong-Kong/static/media/Hughesiliers.9a95765cd415791a8a5e.jpg",
     "static/media/banner.jpg": "/Battle-of-Hong-Kong/static/media/banner.83aef17bc4169fb0f6b7.jpg",
     "static/media/ststephens.jpeg": "/Battle-of-Hong-Kong/static/media/ststephens.8db8c2cfdee663164368.jpeg",
-    "static/media/18.svg": "/Battle-of-Hong-Kong/static/media/18.df9d621da27ab0c7808ea994ba7d1611.svg",
+    "static/media/21.svg": "/Battle-of-Hong-Kong/static/media/21.37d912abcb31cc7add6cafa876117169.svg",
+    "static/media/24.svg": "/Battle-of-Hong-Kong/static/media/24.06f756d453d749a32dca49c3824f0915.svg",
+    "static/media/18.svg": "/Battle-of-Hong-Kong/static/media/18.055ba3ba121a07e5229f025b7b43de4e.svg",
+    "static/media/25.svg": "/Battle-of-Hong-Kong/static/media/25.e36513d7e86520e5a09655884dbf622b.svg",
     "static/media/17.svg": "/Battle-of-Hong-Kong/static/media/17.ad8e2356675abbbcdc3f603f1153d647.svg",
     "static/media/13.svg": "/Battle-of-Hong-Kong/static/media/13.97f224f634aa7cecdab9e19e96f5cd6e.svg",
     "static/media/08.svg": "/Battle-of-Hong-Kong/static/media/08.e6a6e160b1cdbb7ab1e72beac67af702.svg",
@@ -17,12 +20,12 @@
     "index.html": "/Battle-of-Hong-Kong/index.html",
     "static/media/Flag_of_the_United_Kingdom.svg": "/Battle-of-Hong-Kong/static/media/Flag_of_the_United_Kingdom.fd46970f89e3fbca473f57e811916ea0.svg",
     "static/media/Flag_of_Japan_(1870–1999).svg": "/Battle-of-Hong-Kong/static/media/Flag_of_Japan_(1870–1999).94601c1af273882a0c964a18a27976a9.svg",
-    "main.83c8c012.css.map": "/Battle-of-Hong-Kong/static/css/main.83c8c012.css.map",
-    "main.d067afe1.js.map": "/Battle-of-Hong-Kong/static/js/main.d067afe1.js.map",
+    "main.5b391650.css.map": "/Battle-of-Hong-Kong/static/css/main.5b391650.css.map",
+    "main.76cdb250.js.map": "/Battle-of-Hong-Kong/static/js/main.76cdb250.js.map",
     "787.ab98d7b9.chunk.js.map": "/Battle-of-Hong-Kong/static/js/787.ab98d7b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83c8c012.css",
-    "static/js/main.d067afe1.js"
+    "static/css/main.5b391650.css",
+    "static/js/main.76cdb250.js"
   ]
 }
