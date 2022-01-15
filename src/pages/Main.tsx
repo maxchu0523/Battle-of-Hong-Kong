@@ -323,7 +323,7 @@ function Main() {
                             <ul style={{ color: 'white' }}>
                                 <li> Airstrike KaiTak Aiport </li>
                                 <li> Battles in the Northern New Territories </li>
-                                <li> Airstrike KaiTak Aiport </li>
+                           
 
                             </ul>
                             <p style={{ color: 'white' }}>8/12</p>
