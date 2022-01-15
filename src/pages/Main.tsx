@@ -10,12 +10,19 @@ import StStephens from '../resources/img/ststephens.jpeg'
 import ReactDOM from 'react-dom'
 // import JapanSolider from '../resources/img/japan_solider.svg'
 import plane from '../resources/img/Black_aircraft_icon.svg'
+import John from '../resources/img/john.png'
+import HongKongChineseRegiment from '../resources/img/Hong_Kong_Chinese_Regiment.jpg';
+import RememberHongKong from '../resources/img/RememberHongKong.jpg';
+import Poppy from '../resources/img/Poppy.jpg'
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import HongKongIslandMap from '../resources/img/HongKongIslandMap.png';
 import lestWeForGet from '../resources/img/1980_lest_we_forget.png';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Remembrance from '../resources/img/Remembrance.jpg'
+
+
 
 import map1 from '../resources/img/map/08.svg'
 import map2 from '../resources/img/map/10.svg'
@@ -478,17 +485,50 @@ function Main() {
 
 
             <div className="container-story">
+
+
                 <div className="item-story">
+
+                    <img src={HongKongChineseRegiment} ></img>
+                </div>
+                <div className="item-story">
+                    <h1 style={{ textAlign: "left" }}>香港華人軍團</h1>
+                    <h1 style={{ textAlign: "left" }}>Hong Kong Chinese Regiment</h1>
+                    The Hong Kong Chinese Regiment (HKCR) was a regiment that had started to be raised by the British Army shortly before the Battle of Hong Kong during World War II.
+                </div>
+
+                <div className="item-story">
+                    <h1 style={{ textAlign: "left" }}>C Force, Royal Rifles of Canada</h1>
+                    "C" Force was the Canadian military contingent involved in the Battle of Hong Kong, in December 1941. Members of the force were the first Canadian soldiers to see action in World War II. The major Canadian units involved in the defence of Hong Kong were the Winnipeg Grenadiers and the Royal Rifles of Canada. In addition to this the Canadians provided a Brigade HQ.
+                </div>
+                <div className="item-story">
+
+                    <img src={RememberHongKong} ></img>
+                </div>
+
+
+                <div className="item-story">
+                    <img src={John} ></img>
+                </div>
+                <div className="item-story">
+                    <h1 style={{ textAlign: "left" }}>John Robert Osborn</h1>
+                    During the afternoon the Company was cut off from the Battalion and completely surrounded by the enemy who were able to approach to within grenade throwing distance of the slight depression which the Company was holding. Several enemy grenades were thrown which Company Sergeant-Major Osborn picked up and threw back. The enemy threw a grenade which landed in a position where it was impossible to pick it up and return it in time. Shouting a warning to his comrades this gallant Warrant Officer threw himself on the grenade which exploded killing him instantly. His self-sacrifice undoubtedly saved the lives of many others.
+                </div>
+
+
+
+                <div className="item-story">
+                    <h1 style={{ textAlign: "left" }}>曉士兵團</h1>
                     <h1 style={{ textAlign: "left" }}>Hughesiliers</h1>
                     To cope with the Japanese military threat on the eve of the Pacific War, the Hong Kong government introduced the Compulsory Service Ordinance in July 1939, requiring all British men between 18 and 41 to report for military service and, if fit, to be enrolled in the Hong Kong Volunteer Defence Corps.
                 </div>
+
                 <div className="item-story">
 
                     <img src={Hughesiliers} ></img>
                 </div>
 
                 <div className="item-story">
-
                     <img src={StStephens} ></img>
                 </div>
                 <div className="item-story">
@@ -496,15 +536,36 @@ function Main() {
                     Several hours before the British surrendered on Christmas day at the end of the Battle of Hong Kong, Japanese soldiers entered St. Stephen's College, which was being used as a hospital on the front line at the time. The following morning, after the surrender, the Japanese ordered that all these bodies should be cremated just outside the hall. Other soldiers who had died in the defence of Stanley were burned with those killed in the massacre, making well over 100 altogether.
                 </div>
 
+                <div className="item-story">
+                    <h1 style={{ textAlign: "left" }}>Remembrance Day in Hong Kong</h1>
+                    <h1 style={{ textAlign: "left" }}>國殤紀念日</h1>
+                    <h1 style={{ textAlign: "left" }}>11/11</h1>
+                    
+                    Though not a public holiday since July 1997, Remembrance Sunday is observed in Hong Kong, and is marked by a multi-faith memorial service at the Cenotaph in Central, Hong Kong. The service is organised by the Hong Kong ex-servicemen Association, and is attended by various Government officials and the representatives of various religious traditions such as the Anglican Church, the Roman Catholic Church, the Eastern Orthodox Church, the Buddhist community, the Taoist community, the Muslim community and the Sikh community.
+                </div>
+                <div className="item-story">
+                    <img src={Poppy} ></img>
+                </div>
+
+
             </div>
 
-            <div style={{ backgroundColor: "", height: "100vh", width: "100vw" }}>
-                <div style={{ position: "relative", top: "30%", left: "30%" }} >
+            <div style={{ backgroundColor: "black", height: "100vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                {/* <div style={{ position: "relative", top: "30%", left: "30%" }} >
                     <h1 style={{ color: "white" }}>Lest we forget</h1>
 
+                </div> */}
+                <div style={{ flex: "1" ,alignItems: "left", paddingLeft: "15vw"}}>
+                    <h1 style={{ color: "white" ,textAlign: "left"}}>Lest we</h1>
+                    {/* <h1 style={{ color: "white" ,textAlign: "left"}}>we</h1> */}
+                    <h1 style={{ color: "white" ,textAlign: "left"}}>Forget</h1>
+                    <h1 style={{ color: "white" ,textAlign: "left"}}>永誌不忘</h1>
+                    
+
                 </div>
-                <div>
-                    <img src={lestWeForGet}></img>
+                <div style={{ flex: "2" }}>
+                    <img src = {Remembrance}></img>
+                    {/* <img src={lestWeForGet}></img> */}
 
                 </div>
 
