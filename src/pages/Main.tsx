@@ -40,20 +40,20 @@ let mapName = map1;
 function Main() {
     const [scrollPosition, SetScrollPosition] = useState(0);
     const handleScroll = () => {
-        const position = window.pageYOffset + (window.screen.height/2);
+        const position = window.pageYOffset + (window.screen.height / 2);
         // console.log(position);
         var bodyRect = document.body.getBoundingClientRect(),
 
-        elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
+            elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             mapName = map1;
         }
-        
+
         elemRect = document.getElementById('mapTimeLine2')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             mapName = map2;
         }
-        
+
         elemRect = document.getElementById('mapTimeLine3')!.getBoundingClientRect();
         if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
             mapName = map3;
@@ -96,6 +96,23 @@ function Main() {
         };
     }, []);
 
+    const displaySolider = (times: number) => {
+        let indents = [];
+        for (var i = 0; i < times; i++) {
+            indents.push(<img className="size" key={i} src={BirtishSolider} ></img>);
+        }
+        return indents;
+    };
+
+    const displayPlane = (times: number) => {
+        let indents = [];
+        for (var i = 0; i < times; i++) {
+            indents.push(<img className="size" key={i} src={plane} ></img>);
+        }
+        return indents;
+    };
+
+
     return (
         <>
 
@@ -107,12 +124,12 @@ function Main() {
                 </div>
             </div>
 
-            <div style={{ alignContent: "center" , paddingTop: "10vh", paddingLeft: "25vw" , paddingRight: "25vw"}}>
+            <div style={{ alignContent: "center", paddingTop: "10vh", paddingLeft: "25vw", paddingRight: "25vw" }}>
                 <p style={{ textAlign: "center" }}>
-                The Battle of Hong Kong (8–25 December 1941), also known as the Defence of Hong Kong and the Fall of Hong Kong, was one of the first battles of the Pacific War in World War II. 
-                On the same morning as the attack on Pearl Harbor, forces of the Empire of Japan attacked the British Crown colony of Hong Kong, without declaring war against the British Empire. 
-                The Hong Kong garrison consisted of British, Indian and Canadian units, also the Auxiliary Defence Units and Hong Kong Volunteer Defence Corps (HKVDC).
-                Within a week the defenders abandoned the mainland and less than two weeks later, with their position on the island untenable, the colony surrendered.
+                    The Battle of Hong Kong (8–25 December 1941), also known as the Defence of Hong Kong and the Fall of Hong Kong, was one of the first battles of the Pacific War in World War II.
+                    On the same morning as the attack on Pearl Harbor, forces of the Empire of Japan attacked the British Crown colony of Hong Kong, without declaring war against the British Empire.
+                    The Hong Kong garrison consisted of British, Indian and Canadian units, also the Auxiliary Defence Units and Hong Kong Volunteer Defence Corps (HKVDC).
+                    Within a week the defenders abandoned the mainland and less than two weeks later, with their position on the island untenable, the colony surrendered.
                 </p>
             </div>
 
@@ -122,19 +139,16 @@ function Main() {
                 <div className='item'>
                     <div>
                         <h1 style={{ textAlign: "left" }}>
-                            The
+                            The military imbalance
                         </h1>
                         <h1 style={{ textAlign: "left" }}>
-                            Military
-                        </h1>
-                        <h1 style={{ textAlign: "left" }}>
-                            Imbalance
+                            between British and Japan 
                         </h1>
                     </div>
-                    
+
                 </div>
                 <div className='item'>
-                    <img src={BirtishFlag} style={{ border: "solid 0.5px"}} />
+                    <img src={BirtishFlag} style={{ border: "solid 0.5px" }} />
                 </div>
                 <div className='item'   >
                     <img src={JapanFlag} style={{ border: "solid 0.5px" }} />
@@ -143,106 +157,12 @@ function Main() {
                 <div className='item'>
                 </div>
                 <div className='item' >
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
+                    {displaySolider(15)}
+                    {displayPlane(5)}
                 </div>
                 <div className='item'>
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size" src={BirtishSolider} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-                    <img className="size-plane" src={plane} />
-
+                    {displaySolider(30)}
+                    {displayPlane(47)}
                 </div>
 
                 <div className='item' >
@@ -261,15 +181,15 @@ function Main() {
 
 
             <div id="map-timeline" className="container-map" style={{ backgroundColor: "black" }}>
-                
+
                 <div className="item-map-left" >
                     <div>
                         <h1 style={{ color: "white", textAlign: "left", paddingLeft: "2vw" }}> Battle </h1>
                     </div>
-                    
+
                     <div >
                         <img id="map" src={mapName} ></img>
-                        
+
                     </div>
 
 
@@ -282,48 +202,23 @@ function Main() {
                     <VerticalTimeline
 
                         layout={'1-column'}
-                        animate={ true }
-                    
+                        animate={true}
+
                     >
-                        {/* <VerticalTimelineElement
-                            className="vertical-timeline-element--work"
-                            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                            date="2011 - present"
-                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-
-                        >
-                            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                            <p>
-                                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                            </p>
-                        </VerticalTimelineElement> */}
-
-                        {/* <VerticalTimelineElement
-                            iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
-
-                        /> */}
-
-
-
-
 
                         <VerticalTimelineElement
                             id='mapTimeLine1'
                             className="vertical-timeline-element"
                             iconStyle={{ background: 'rgb(105,105,105)', color: '#fff' }}
                             contentStyle={{ background: 'black' }}
-                            
-       
-                            
+
                         >
 
                             <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Out Break of the War</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> Airstrike KaiTak Aiport </li>
                                 <li> Battles in the Northern New Territories </li>
-                           
+
 
                             </ul>
                             <p style={{ color: 'white' }}>8/12</p>
@@ -336,8 +231,8 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Battle of Gin Drinker's Line</h3>
-                            <ul style={{ color: 'white' }}> 
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Battle of Gin Drinker's Line</h3>
+                            <ul style={{ color: 'white' }}>
                                 <li> Japan Attack on Gin Drinker's Line </li>
                                 <li> Fall of Shing Mun Redoubt </li>
                             </ul>
@@ -352,7 +247,7 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese occupation of Kowloon Peninsula</h3>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Japanese occupation of Kowloon Peninsula</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> Fall of Gin Drinker's Line </li>
                                 <li> British Army retreats to Hong Kong Island</li>
@@ -368,7 +263,7 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese troops prepare to land on Hong Kong Island</h3>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Japanese troops prepare to land on Hong Kong Island</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> Japan Attack on Gin Drinker's Line </li>
                                 <li> Japanese air raids and bombardment of Hong Kong Island </li>
@@ -386,7 +281,7 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese landing on Hong Kong Island</h3>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Japanese landing on Hong Kong Island</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> The British army's vision was obstructed by thick smoke </li>
                                 <li> Japanese army launched a landing battle </li>
@@ -403,7 +298,7 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>Japanese Army penetrated into Hong Kong Island</h3>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>Japanese Army penetrated into Hong Kong Island</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> Japanese advance along Kim Tuk's Horse Path and Tai Tam Road </li>
                                 <li> Wong Nai Chung Gap Battle </li>
@@ -422,7 +317,7 @@ function Main() {
                             contentStyle={{ background: 'black' }}
 
                         >
-                            <h3 className="vertical-timeline-element-title"  style={{ color: 'white' }}>British counter-offensive failed and fell into division</h3>
+                            <h3 className="vertical-timeline-element-title" style={{ color: 'white' }}>British counter-offensive failed and fell into division</h3>
                             <ul style={{ color: 'white' }}>
                                 <li> The British Western Brigade counterattacks Wong Nai Chung Gap</li>
                                 <li> Fall of Jardine's Mount</li>
@@ -540,7 +435,7 @@ function Main() {
                     <h1 style={{ textAlign: "left" }}>Remembrance Day in Hong Kong</h1>
                     <h1 style={{ textAlign: "left" }}>國殤紀念日</h1>
                     <h1 style={{ textAlign: "left" }}>11/11</h1>
-                    
+
                     Though not a public holiday since July 1997, Remembrance Sunday is observed in Hong Kong, and is marked by a multi-faith memorial service at the Cenotaph in Central, Hong Kong. The service is organised by the Hong Kong ex-servicemen Association, and is attended by various Government officials and the representatives of various religious traditions such as the Anglican Church, the Roman Catholic Church, the Eastern Orthodox Church, the Buddhist community, the Taoist community, the Muslim community and the Sikh community.
                 </div>
                 <div className="item-story">
@@ -551,30 +446,17 @@ function Main() {
             </div>
 
             <div style={{ backgroundColor: "black", height: "100vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                {/* <div style={{ position: "relative", top: "30%", left: "30%" }} >
-                    <h1 style={{ color: "white" }}>Lest we forget</h1>
-
-                </div> */}
-                <div style={{ flex: "1" ,alignItems: "left", paddingLeft: "15vw"}}>
-                    <h1 style={{ color: "white" ,textAlign: "left"}}>Lest we</h1>
-                    {/* <h1 style={{ color: "white" ,textAlign: "left"}}>we</h1> */}
-                    <h1 style={{ color: "white" ,textAlign: "left"}}>Forget</h1>
-                    <h1 style={{ color: "white" ,textAlign: "left"}}>永誌不忘</h1>
-                    
-
+                <div style={{ flex: "1", alignItems: "left", paddingLeft: "15vw" }}>
+                    <h1 style={{ color: "white", textAlign: "left" }}>Lest we</h1>
+                    <h1 style={{ color: "white", textAlign: "left" }}>Forget</h1>
+                    <h1 style={{ color: "white", textAlign: "left" }}>永誌不忘</h1>
                 </div>
                 <div style={{ flex: "2" }}>
-                    <img src = {Remembrance}></img>
-                    {/* <img src={lestWeForGet}></img> */}
-
+                    <img src={Remembrance}></img>
                 </div>
 
 
             </div>
-
-
-
-
 
 
         </>
