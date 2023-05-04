@@ -139,7 +139,7 @@ function Main() {
                 <div className='item'>
                     <div>
                         <h1 style={{ textAlign: "left" }}>
-                            英日本軍事上嘅不平衡
+                            英日軍力不平衡
                         </h1>
                         <h1 style={{ textAlign: "left" }}>
                             The military imbalance between British and Japan 
