@@ -1,19 +1,19 @@
-# Project Title
+# Battle of Hong Kong
 
-Battle of Hong Kong
+
 
 ## Table of Contents
 
 - [Project Description](#project-description)
 - [Installation](#installation)
-- [Highlighted Features](#features)
+- [Highlighted Features](#highlighted-features)
 - [Thank You](#thank-you)
 
 
 ## Project Description
 
-This was a website about the Battle Of Hong Kong in WWII. [Battle of Hong Kong Wiki](https://en.wikipedia.org/wiki/Battle_of_Hong_Kong) 
-Being born and raised in Hong Kong, I created this website to commemorate those who sacrificed in protecting Hong Kong. It was also part of my coursework for the Professional Certificate in Information and Interface Design at the Hong Kong Design Institute.
+This was a website about the Battle Of Hong Kong in WWII [Battle of Hong Kong Wiki](https://en.wikipedia.org/wiki/Battle_of_Hong_Kong). 
+Being born and raised in Hong Kong, I created this website to commemorate those who sacrificed in protecting Hong Kong. It was also part of my coursework for the Professional Certificate in Information and Interface Design i pursued at the Hong Kong Design Institute.
 
 ## Highlighted Features
 
