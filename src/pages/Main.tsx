@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Main.scss';
-import Banner from '../resources/img/banner.jpg';
-import HongKongFlag from '../resources/img/Flag_of_Hong_Kong_(1959–1997).svg'
 import JapanFlag from '../resources/img/Flag_of_Japan_(1870–1999).svg'
 import BirtishFlag from '../resources/img/Flag_of_the_United_Kingdom.svg'
 import BirtishSolider from '../resources/img/british_solider.svg'
 import Hughesiliers from '../resources/img/Hughesiliers.jpg'
 import StStephens from '../resources/img/ststephens.jpeg'
 import ReactDOM from 'react-dom'
-// import JapanSolider from '../resources/img/japan_solider.svg'
 import plane from '../resources/img/Black_aircraft_icon.svg'
 import John from '../resources/img/john.png'
 import HongKongChineseRegiment from '../resources/img/Hong_Kong_Chinese_Regiment.jpg';
@@ -17,9 +14,6 @@ import Poppy from '../resources/img/Poppy.jpg'
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import HongKongIslandMap from '../resources/img/HongKongIslandMap.png';
-import lestWeForGet from '../resources/img/1980_lest_we_forget.png';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Remembrance from '../resources/img/Remembrance.jpg'
 
 
@@ -34,59 +28,25 @@ import map7 from '../resources/img/map/24.svg'
 import map8 from '../resources/img/map/25.svg'
 
 
-let mapName = map1;
-
 
 function Main() {
-    const [scrollPosition, SetScrollPosition] = useState(0);
+    const [mapName, setMapName] = useState('map1');
+
     const handleScroll = () => {
         const position = window.pageYOffset + (window.screen.height / 2);
-        // console.log(position);
-        var bodyRect = document.body.getBoundingClientRect(),
+        const bodyRect = document.body.getBoundingClientRect();
+        const maps = [map1, map2, map3, map4, map5, map6, map7, map8];
 
-            elemRect = document.getElementById('mapTimeLine1')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map1;
+        for (let i = 0; i < maps.length; i++) {
+            const elemRect = document.getElementById(`mapTimeLine${i + 1}`)?.getBoundingClientRect();
+            if (elemRect && position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
+                setMapName(maps[i]);
+                break;
+            }
         }
 
-        elemRect = document.getElementById('mapTimeLine2')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map2;
-        }
-
-        elemRect = document.getElementById('mapTimeLine3')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map3;
-        }
-
-        elemRect = document.getElementById('mapTimeLine4')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map4;
-        }
-
-        elemRect = document.getElementById('mapTimeLine5')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map5;
-        }
-
-        elemRect = document.getElementById('mapTimeLine6')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map6;
-        }
-
-        elemRect = document.getElementById('mapTimeLine7')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map7;
-        }
-
-        elemRect = document.getElementById('mapTimeLine8')!.getBoundingClientRect();
-        if (position > (elemRect.top - bodyRect.top) && position < (elemRect.bottom - bodyRect.top)) {
-            mapName = map8;
-        }
-
-
-        SetScrollPosition(position);
     };
+
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -142,19 +102,19 @@ function Main() {
                             英日軍力不平衡
                         </h1>
                         <h1 style={{ textAlign: "left" }}>
-                            The military imbalance between British and Japan 
+                            The military imbalance between British and Japan
                         </h1>
                         <div style={{ display: "flex" }}>
-                            <div style={{width:"1.5em"}}>
-                                <img style={{ height: "1em" }} src={BirtishSolider} /> 
+                            <div style={{ width: "1.5em" }}>
+                                <img style={{ height: "1em" }} src={BirtishSolider} />
                             </div>
                             <span> ~ 1000 soliders </span>
                         </div>
                         <div style={{ display: "flex" }}>
-                            <div style={{width:"1.5em"}}>
-                                <img style={{ height: "1em" }} src={plane} /> 
+                            <div style={{ width: "1.5em" }}>
+                                <img style={{ height: "1em" }} src={plane} />
                             </div>
-                            <span> = 1 plane </span> 
+                            <span> = 1 plane </span>
                         </div>
                     </div>
 
@@ -197,7 +157,7 @@ function Main() {
                     </div>
 
                     <div >
-                        <img id="map" src={mapName} ></img>
+                        <img id="map" src={mapName ? mapName : map1} ></img>
 
                     </div>
 
@@ -457,7 +417,7 @@ function Main() {
 
             <div style={{ backgroundColor: "black", height: "100vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <div style={{ flex: "1", alignItems: "left", paddingLeft: "15vw" }}>
-                <h1 style={{ color: "white", textAlign: "left" }}>永誌不忘</h1>
+                    <h1 style={{ color: "white", textAlign: "left" }}>永誌不忘</h1>
                     <h1 style={{ color: "white", textAlign: "left" }}>Lest we</h1>
                     <h1 style={{ color: "white", textAlign: "left" }}>Forget</h1>
 
