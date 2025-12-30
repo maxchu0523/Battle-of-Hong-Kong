@@ -12,8 +12,8 @@ import HongKongChineseRegiment from '../resources/img/Hong_Kong_Chinese_Regiment
 import RememberHongKong from '../resources/img/RememberHongKong.jpg';
 import Poppy from '../resources/img/Poppy.jpg'
 
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+// import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+// import 'react-vertical-timeline-component/style.min.css';
 import Remembrance from '../resources/img/Remembrance.jpg'
 
 
@@ -168,7 +168,7 @@ function Main() {
 
 
                 <div className="item-map-right" >
-                    <VerticalTimeline
+                    {/* <VerticalTimeline
 
                         layout={'1-column'}
                         animate={true}
@@ -340,7 +340,7 @@ function Main() {
 
                         </VerticalTimelineElement>
 
-                    </VerticalTimeline>
+                    </VerticalTimeline> */}
                 </div>
 
 
@@ -433,9 +433,6 @@ function Main() {
         </>
     );
 }
-const rootElement = document.getElementById('root')
-ReactDOM.render(<Main />, rootElement)
-
 export default Main;
 
 
