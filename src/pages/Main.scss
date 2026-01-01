@@ -21,9 +21,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   // border-style: solid;
-  font-size: 50px
-
-  ;
+  font-size: 50px;
 }
 
 .container {
@@ -32,59 +30,44 @@ body {
   justify-content: space-between;
   margin: 20vh;
   align-items: start;
-
 }
 
 .item {
-  
   width: 32%;
   padding-bottom: 5%; /* 32:18, i.e. 16:9 */
   margin-bottom: 2%; /* (100-32*3)/2 */
 }
 
-
-
 .container-size {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  
-  
 }
 
 .size {
-
   max-width: 1.5vw;
 }
 
 .size-plane {
-
-  width: 4vw; 
+  width: 4vw;
 }
 
-
-img {max-width:100%;}
-
+img {
+  max-width: 100%;
+}
 
 h1 {
   text-align: center;
 }
 
-
-
-
-
-
-
 .container-story {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .item-story {
-  width: 100%
+  width: 100%;
 }
 
 .container-story > div {
@@ -96,18 +79,15 @@ h1 {
 }
 
 .nav-wrapper {
-    position: fixed;
-    top: 0; left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-
 
 .container-map {
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-
-  
-
 }
 
 .item-map-left {
@@ -115,7 +95,6 @@ h1 {
   top: 0;
 
   flex: 2;
-  
 }
 
 .item-map-right {
@@ -123,7 +102,6 @@ h1 {
   overflow: auto;
   margin-bottom: 80vh;
   margin-top: 80vh;
-
 }
 
 .container-map > div {
@@ -132,10 +110,6 @@ h1 {
 
   box-shadow: 0 0 0 0px black;
 }
-
-
-
-
 
 .flexcontainer {
   display: flex;
@@ -159,7 +133,7 @@ h1 {
 #content p {
   display: block;
 }
-#canvas-right{
+#canvas-right {
   background: blue;
   order: 2;
   flex: 0 0 57px;
